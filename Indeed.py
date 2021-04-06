@@ -52,7 +52,7 @@ for i in range(len(data)):
     action = ActionChains(browser)
 
 
-    time.sleep(3)
+    time.sleep(7)
 
     browser.find_element_by_xpath('//*[@id="hireHeroPostJobButton"]').click()
 
