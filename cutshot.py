@@ -98,12 +98,7 @@ for i in range(len(data)):
             post_a_job = browser.find_element_by_xpath(job_post)
             post_a_job.click()
     
-    '''
-    login_xpath = '//*[@id="create_signal_wrapper"]/div/div[2]/div[1]/div/div[2]/div/div[1]/div/div[1]/img'
-    login_click = browser.find_element_by_xpath(login_xpath)
-    login_click.click()
-    '''
-    
+    #driver.find_elements_by_link_text("Tutorials")
     time.sleep(5)
     login_xpath = '//*[@class="cat p5"]'
     login_click = browser.find_element_by_xpath(login_xpath)
@@ -189,3 +184,4 @@ for i in range(len(data)):
     W(browser, 10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="setup_job_incoming_automation_container"]/div/div/div[3]/div/div/div[1]'))).click()
 
     browser.quit()
+    
