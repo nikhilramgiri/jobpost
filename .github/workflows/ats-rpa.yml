@@ -37,4 +37,7 @@ jobs:
     - name: Run tests
       run: |
         python Hirist.py
+    - name: Cutshot test
+      run: |
+        python cutshot.py
 
