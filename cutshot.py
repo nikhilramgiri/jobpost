@@ -83,6 +83,8 @@ for i in range(len(data)):
     continue_click = '//*[@ng-click="checkLoginStatusOfEmail()"]'
     continue_button = browser.find_element_by_xpath(continue_click)
     continue_button.click()
+    
+    time.sleep(3)
 
     password_xpath = '//*[@type="password"]'
     password_click = browser.find_element_by_xpath(password_xpath)
