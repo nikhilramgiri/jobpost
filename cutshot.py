@@ -11,6 +11,8 @@ import os
 from dotenv import load_dotenv
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.options import Options
+import requests
+import json
 
 ''' Setting up ENV Variables'''
 load_dotenv()
