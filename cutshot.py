@@ -178,8 +178,9 @@ for i in range(len(data)):
     
     time.sleep(5)
 
-    submit=browser.find_element_by_xpath('//*[@id="matches_workflow_wrapper"]/div[2]/div/div/div[8]/div/div[2]/div/div[2]/div[1]/span[2]')
-    submit.click()
+#     submit=browser.find_element_by_xpath('//*[@id="matches_workflow_wrapper"]/div[2]/div/div/div[8]/div/div[2]/div/div[2]/div[1]/span[2]')
+#     submit.click()
+    W(browser,10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="matches_workflow_wrapper"]/div[2]/div/div/div[8]/div/div[2]/div/div[2]/div[1]/span[2]'))).click()
     
     W(browser, 10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="setup_job_incoming_automation_container"]/div/div/div[3]/div/div/div[1]'))).click()
 
