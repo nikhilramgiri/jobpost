@@ -179,6 +179,8 @@ for i in range(len(data)):
     action.double_click(Addprefer).perform()
     
     time.sleep(3)
+    handles = browser.window_handles
+    print(handles)
 
 #     submit=browser.find_element_by_xpath('//*[@id="matches_workflow_wrapper"]/div[2]/div/div/div[8]/div/div[2]/div/div[2]/div[1]')
 #     submit.click()
