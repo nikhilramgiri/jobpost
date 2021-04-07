@@ -179,8 +179,15 @@ for i in range(len(data)):
     action.double_click(Addprefer).perform()
     
     time.sleep(3)
-    handles = browser.window_handles
-    print(handles)
+    tick=browser.find_element_by_xpath('//*[@id="matches_workflow_wrapper"]/div[2]/div/div/div[8]/div/div[2]/div/div[1]/div[6]/div[2]/globalcheckbox/div/div[1]/div/img')
+    tick.click()
+    
+    unticktick=browser.find_element_by_xpath('//*[@id="matches_workflow_wrapper"]/div[2]/div/div/div[8]/div/div[2]/div/div[1]/div[6]/div[2]/globalcheckbox/div/div[1]/div/img')
+    untick.click()
+
+    submit=browser.find_element_by_xpath('//*[@id="matches_workflow_wrapper"]/div[2]/div/div/div[8]/div/div[2]/div/div[2]/div[1]/span[2]')
+    submit.click()
+   
 
 #     submit=browser.find_element_by_xpath('//*[@id="matches_workflow_wrapper"]/div[2]/div/div/div[8]/div/div[2]/div/div[2]/div[1]')
 #     submit.click()
